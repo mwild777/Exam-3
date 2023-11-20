@@ -4,6 +4,8 @@ public class Person {
 
     String PhoneNumber;
 
+    String EmailAddress;
+
     @Override
     public String toString() {
         return "Person{" +
@@ -13,9 +15,6 @@ public class Person {
                 ", EmailAddress='" + EmailAddress + '\'' +
                 '}';
     }
-
-    String EmailAddress;
-
     public Person(String name, String address, String phoneNumber, String emailAddress) {
         Name = name;
         Address = address;
