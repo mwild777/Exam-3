@@ -25,14 +25,13 @@ public class TestSchoolRecords {
         }
         ArrayList<Person> employeeList = EmployeeList(people);
     }
-    public static ArrayList EmployeeList(ArrayList<Person> people) {
+    public static ArrayList<Person> EmployeeList(ArrayList<Person> people) {
         ArrayList<Person> newList = new ArrayList<Person>();
         for (Person Person : people) {
             if (Person instanceof Employee) {
-                newList.add(new Person());
+                newList.add(Person);
             }
-            return newList;
         }
-
+        return newList;
     }
 }
